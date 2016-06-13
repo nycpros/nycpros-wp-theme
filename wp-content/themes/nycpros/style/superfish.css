@@ -1,0 +1,201 @@
+
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			181px; /* left offset of submenus need to match (see below) */
+	border: 1px solid #FFFFFF;
+	border-bottom: 0;
+}
+.sf-menu ul li {
+	width:			100%;
+	border-bottom: 1px solid #FFFFFF;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			40px; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			181px; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			181px; /* match ul width */
+	top:			0;
+}
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	margin: 0!important;
+	float:left;
+}
+
+.sf-menu li a {
+	padding: .5em .75em .5em .75em;
+	margin: 0;
+	text-decoration:none;
+	font-weight:bold;
+	font-size: 93%;
+	
+}
+
+.sf-menu li li a {
+	padding: 		.5em .75em .5em .75em;
+	text-decoration:none;
+	font-weight:normal;
+	font-size: 93%;
+}
+
+.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#000000;
+}
+.sf-menu li {
+	
+}
+.sf-menu li li {
+	background:		#80B9DC;
+}
+.sf-menu li li li {
+	background:		#666666;
+}
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	outline:		0;
+}
+
+.sf-menu li li:hover,
+.sf-menu li li a:focus, .sf-menu li li a:hover, .sf-menu li li a:active {
+	background:		#00457A;
+	outline:		0;
+}
+
+
+/****** EACH ITEM  *********/
+
+.sf-menu > li > a:first-child {
+background-image: url('../images/globalnav_bg.gif');
+background-repeat: no-repeat;
+float:left;
+height:0;
+overflow:hidden;
+padding:30px 0 0 0;
+margin: 0;
+border:0;
+}
+
+
+/* DEFAULT STATES */
+
+.sf-menu li.prosthodontics a {
+background-position:0 0;
+width: 130px;
+}
+.sf-menu li.solutions a {
+background-position:-130px 0px;
+width: 109px;
+}
+.sf-menu li.biographies a {
+background-position:-239px 0px;
+width: 112px;
+}
+.sf-menu li.studio a {
+background-position:-351px 0px;
+width: 109px;
+}
+.sf-menu li.gallery a {
+background-position:-460px 0px;
+width: 112px;
+}
+.sf-menu li.news a {
+background-position:-572px 0px;
+width: 109px;
+}
+.sf-menu li.contact a {
+background-position:-681px 0px;
+width: 112px;
+}
+
+
+
+/* NAV HOVERS  */
+
+.sf-menu li.prosthodontics a:hover {
+background-position:0 -30px;
+}
+.sf-menu li.solutions a:hover  {
+background-position:-130px -30px;
+}
+.sf-menu li.biographies a:hover {
+background-position:-239px -30px;
+}
+.sf-menu li.studio a:hover {
+background-position:-351px -30px;
+}
+.sf-menu li.gallery a:hover {
+background-position:-460px -30px;
+}
+.sf-menu li.news a:hover {
+background-position:-572px -30px;
+}
+.sf-menu li.contact a:hover {
+background-position:-681px -30px;
+}
+
+
+
+/* YOU ARE HERE  */
+
+body.prosthodontics .sf-menu li.prosthodontics a {
+background-position:0 -30px;
+}
+body.solutions .sf-menu li.solutions a {
+background-position:-130px -30px;
+}
+body.biographies .sf-menu li.biographies a {
+background-position:-239px -30px;
+}
+body.studio .sf-menu li.studio a {
+background-position:-351px -30px;
+}
+body.gallery .sf-menu li.gallery a {
+background-position:-460px -30px;
+}
+body.news .sf-menu li.news a {
+background-position:-572px -30px;
+}
+body.contact .sf-menu li.contact a {
+background-position:-681px -30px;
+}
+
+
