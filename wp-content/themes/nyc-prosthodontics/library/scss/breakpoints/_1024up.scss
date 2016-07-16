@@ -1,0 +1,31 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+.show-above-1024    { display: block !important; }
+.show-below-1024    { display: none !important; }
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+    width: 984px;
+}
+
+#main.d-5of7 {
+    width: 684px;
+    padding-right: 20px;
+}
+
+#sidebar1.d-2of7 {
+    width: 300px;
+}

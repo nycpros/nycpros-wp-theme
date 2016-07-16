@@ -1,0 +1,376 @@
+.sharrre {
+	display: inline-block;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	margin-right: 5px;
+	overflow: hidden;
+
+	position: relative;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.share-before {
+    margin: 15px 0;
+}
+
+.share-after {
+    margin-top: 25px;
+}
+
+/* Icons */
+.share {
+	display: inline-block;
+	font-family: $fa;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Buttons */
+.sharrre .share,
+.sharrre .count,
+.sharrre .email-text {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: none;
+	display: inline-block;
+	padding: 0;
+	text-decoration: none !important;
+
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.sharrre .share {
+	color: #fff;
+	float: left;
+	text-decoration: none;
+}
+
+.sharrre:hover .share {
+	border: none;
+	color: #fff;
+	text-decoration: none;
+}
+
+.sharrre .count,
+.sharrre .email-text {
+	background-color: #fff;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+}
+
+
+/* Small */
+.share-small .share,
+.share-small .count,
+.share-small .email-text {
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.share-small .count,
+.share-small .email-text {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	float: right;
+	width: 42px;
+}
+
+.share-small .no-count .share {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	width: 65px;
+}
+
+.share-small .share {
+	font-size: 15px;
+	text-align: left;
+	height: 20px;
+	width: 22px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+
+	&:before {
+		display: inline-block;
+		text-align: center;
+		width: 22px;
+	}
+
+}
+
+.share-small .sharrre:hover .share 		{ width: 65px; }
+.share-small .facebook:hover .share 	{ width: 50px; }
+.share-small .pinterest:hover .share 	{ width: 45px; }
+.share-small .googlePlus:hover .share 	{ width: 40px; }
+.share-small .email:hover .share 		{ width: 22px; }
+
+.twitter .share:before 		{ content: '\f099'; }
+.facebook .share:before 	{ content: '\f09a'; }
+.googlePlus .share:before 	{ content: '\f0d5'; }
+.youtube .share:before 		{ content: '\f167'; }
+.digg .share:before 		{ content: '\f1a6'; }
+.delicious .share:before 	{ content: '\f1a5'; }
+.pinterest .share:before 	{ content: '\f231'; }
+.linkedin .share:before 	{ content: '\f0e1'; }
+.stumbleupon .share:before 	{ content: '\f1a4'; }
+.email .share:before 		{ content: '\f0e0'; }
+
+.share-small .pinterest .share:before,
+.share-small .twitter .share:before,
+.share-small .stumbleupon .share:before {
+	font-size: 16px;
+}
+
+$twitter: 	#00ACED;
+$facebook: 	#3B5998;
+$google: 	#E04B33;
+$youtube: 	#D02022;
+$linkedin: 	#0073B2;
+$pinterest: #cb2127;
+$stumble: 	#eb4923;
+$email: 	$gray;
+
+/* Appearance - round */
+.share-round {
+	position: relative;
+	color: $light-gray;
+	height: 47px;
+	white-space: nowrap;
+	margin: 15px 0;
+	padding: 0 10px;
+	border: 1px solid $lighter-gray;
+	border-width: 1px 0;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+
+	.sharrre {
+		overflow: visible;
+
+		.box {
+			position: relative;
+			margin: 0 6px 0 0;
+			padding: 10px 0;
+
+			&:after {
+				position: absolute;
+				top: 12px;
+				right: 0;
+				content: '/';
+				color: $light-gray;
+				font-size: 21px;
+				line-height: 25px;
+				height: 25px;
+			}
+
+		}
+
+		&.last {
+			margin-right: 0;
+
+			.box:after {
+				display: none;
+			}
+
+		}
+
+	}
+
+	a {
+		display: block;
+		color: $light-gray !important;
+		padding: 0 6px 0 35px;
+
+		&:hover, &:focus {
+			color: $link-hover !important;
+
+			.share {
+				top: 6px;
+				left: -4px;
+				line-height: 33px;
+				width: 33px;
+				height: 33px;
+			}
+
+		}
+
+	}
+
+	.email a {
+		font-size: 14px;
+		padding: 0;
+		width: 25px;
+		height: 25px;
+	}
+
+	.share {
+		position: absolute;
+		top: 10px;
+		left: 0;
+		display: block;
+		color: $white;
+		line-height: 25px;
+		width: 25px;
+		height: 25px;
+		text-align: center;
+		transform: translate(0, 0);
+		@include border-radius(100%);
+
+		span{
+			display: none;
+		}
+
+	}
+
+	.count,
+	.email-text {
+		display: block;
+		line-height: 21px;
+		padding: 4px 5px 0 0;
+		margin-right: 5px;
+		background: none;
+	}
+
+	.email-text {
+		text-indent: -9999em;
+	}
+
+	.twitter .share 	{ background: $twitter; }
+	.facebook .share 	{ background: $facebook; padding-top: 1px; }
+	.googlePlus .share 	{ background: $google; padding: 1px 0 0 2px; }
+	.linkedin .share 	{ background: $linkedin; }
+	.youtube .share 	{ background: $youtube; }
+	.pinterest .share 	{ background: $pinterest; padding-top: 1px; }
+	.stumbleupon .share { background: $stumble; }
+	.email .share 		{ background: $email; }
+
+}
+
+/* Appearance - filled */
+.share-filled .twitter .share 				{ background: $twitter; }
+.share-filled .twitter .count,
+.share-filled .twitter .count:hover 		{ color: $twitter; border: 1px solid $twitter; }
+
+.share-filled .facebook .share 				{ background: $facebook; }
+.share-filled .facebook .count,
+.share-filled .facebook .count:hover 		{ color: $facebook; border: 1px solid $facebook; }
+
+.share-filled .googlePlus .share 			{ background: $google; }
+.share-filled .googlePlus .count,
+.share-filled .googlePlus .count:hover 		{ color: $google; border: 1px solid $google; }
+
+.share-filled .linkedin .share 				{ background: $linkedin; }
+.share-filled .linkedin .count,
+.share-filled .linkedin .count:hover 		{ color: $linkedin; border: 1px solid $linkedin; }
+
+.share-filled .youtube .share 				{ background: $youtube; }
+.share-filled .youtube .count,
+.share-filled .youtube .count:hover 		{ color: $youtube; border: 1px solid $youtube; }
+
+.share-filled .pinterest .share 			{ background: $pinterest; }
+.share-filled .pinterest .count,
+.share-filled .pinterest .count:hover 		{ color: $pinterest; border: 1px solid $pinterest; }
+
+.share-filled .stumbleupon .share 			{ background: $stumble; }
+.share-filled .stumbleupon .count,
+.share-filled .stumbleupon .count:hover 	{ color: $stumble; border: 1px solid $stumble; }
+
+.share-filled .email .share 				{ background: $email; }
+.share-filled .email .email-text,
+.share-filled .email .email-text:hover 		{ color: $email; border: 1px solid $email; }
+
+.share-filled .twitter:hover .count 		{ background: $twitter !important; }
+.share-filled .facebook:hover .count 		{ background: $facebook !important; }
+.share-filled .googlePlus:hover .count 		{ background: $google !important; }
+.share-filled .linkedin:hover .count 		{ background: $linkedin !important; }
+.share-filled .youtube:hover .count 		{ background: $youtube !important; }
+.share-filled .pinterest:hover .count 		{ background: $pinterest !important; }
+.share-filled .stumbleupon:hover .count 	{ background: $stumble !important; }
+.share-filled .email:hover .email-text 		{ background: $email !important; }
+
+.share-filled .sharrre:hover .count,
+.share-filled .sharrre:hover .email-text	{ color: #fff; }
+
+/* Appearance - outlined */
+.share-outlined .twitter .share,
+.share-outlined .twitter .count,
+.share-outlined .twitter .count:hover		{ border: 1px solid $twitter; color: $twitter; }
+
+.share-outlined .facebook .share,
+.share-outlined .facebook .count,
+.share-outlined .facebook .count:hover		{ border: 1px solid $facebook; color: $facebook; }
+
+.share-outlined .googlePlus .share,
+.share-outlined .googlePlus .count,
+.share-outlined .googlePlus .count:hover 	{ border: 1px solid $google; color: $google; }
+
+.share-outlined .linkedin .share,
+.share-outlined .linkedin .count,
+.share-outlined .linkedin .count:hover		{ border: 1px solid $linkedin; color: $linkedin; }
+
+.share-outlined .youtube .share,
+.share-outlined .youtube .count,
+.share-outlined .youtube .count:hover		{ border: 1px solid $youtube; color: $youtube; }
+
+.share-outlined .pinterest .share,
+.share-outlined .pinterest .count,
+.share-outlined .pinterest .count:hover		{ border: 1px solid $pinterest; color: $pinterest; }
+
+.share-outlined .stumbleupon .share,
+.share-outlined .stumbleupon .count,
+.share-outlined .stumbleupon .count:hover	{ border: 1px solid $stumble; color: $stumble; }
+
+.share-outlined .email .share,
+.share-outlined .email .email-text,
+.share-outlined .email .email-text:hover	{ border: 1px solid $email; color: $email; }
+
+.share-outlined.share-small .share,
+.share-outlined.share-medium .share 		{ border-right: none !important; }
+
+.share-outlined.share-tall .share 			{ border-top: none !important; }
+
+.share-outlined .twitter:hover .share,
+.share-outlined .twitter:hover .count 		{ background: $twitter; }
+
+.share-outlined .facebook:hover .share,
+.share-outlined .facebook:hover .count 		{ background: $facebook; }
+
+.share-outlined .googlePlus:hover .share,
+.share-outlined .googlePlus:hover .count 	{ background: $google; }
+
+.share-outlined .linkedin:hover .share,
+.share-outlined .linkedin:hover .count 		{ background: $linkedin; }
+
+.share-outlined .youtube:hover .share,
+.share-outlined .youtube:hover .count 		{ background: $youtube; }
+
+.share-outlined .pinterest:hover .share,
+.share-outlined .pinterest:hover .count 	{ background: $pinterest; }
+
+.share-outlined .stumbleupon:hover .share,
+.share-outlined .stumbleupon:hover .count 	{ background: $stumble; }
+
+.share-outlined .email:hover .share,
+.share-outlined .email:hover .email-text	{ background: $gray; }
+
+.share-outlined .sharrre:hover .count,
+.share-outlined .sharrre:hover .share,
+.share-outlined .sharrre:hover .email-text 	{ color: #fff; }
+
+@media (max-width: 480px) {
+
+
+
+} // end of media query

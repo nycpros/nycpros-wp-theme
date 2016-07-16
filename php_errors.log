@@ -1,0 +1,85 @@
+[13-Jul-2016 17:22:39 UTC] PHP Parse error:  syntax error, unexpected 'template_directory' (T_STRING) in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php on line 29
+[13-Jul-2016 17:22:39 UTC] PHP Stack trace:
+[13-Jul-2016 17:22:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[13-Jul-2016 17:22:39 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[13-Jul-2016 17:22:39 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[13-Jul-2016 17:22:39 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[13-Jul-2016 17:22:53 UTC] PHP Parse error:  syntax error, unexpected 'template_directory' (T_STRING) in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php on line 29
+[13-Jul-2016 17:22:53 UTC] PHP Stack trace:
+[13-Jul-2016 17:22:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[13-Jul-2016 17:22:53 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[13-Jul-2016 17:22:53 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[13-Jul-2016 17:22:53 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[13-Jul-2016 17:23:10 UTC] PHP Parse error:  syntax error, unexpected 'template_directory' (T_STRING) in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php on line 29
+[13-Jul-2016 17:23:10 UTC] PHP Stack trace:
+[13-Jul-2016 17:23:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[13-Jul-2016 17:23:10 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[13-Jul-2016 17:23:10 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[13-Jul-2016 17:23:10 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[13-Jul-2016 17:35:32 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php on line 29
+[13-Jul-2016 17:35:32 UTC] PHP Stack trace:
+[13-Jul-2016 17:35:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[13-Jul-2016 17:35:32 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[13-Jul-2016 17:35:32 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[13-Jul-2016 17:35:32 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[13-Jul-2016 17:35:42 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php on line 29
+[13-Jul-2016 17:35:42 UTC] PHP Stack trace:
+[13-Jul-2016 17:35:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[13-Jul-2016 17:35:42 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[13-Jul-2016 17:35:42 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[13-Jul-2016 17:35:42 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[16-Jul-2016 00:07:43 UTC] PHP Fatal error:  Cannot redeclare get_trimmed_phone() (previously declared in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php:132) in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php on line 273
+[16-Jul-2016 00:07:43 UTC] PHP Stack trace:
+[16-Jul-2016 00:07:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/index.php:0
+[16-Jul-2016 00:07:43 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/index.php:10
+[16-Jul-2016 00:07:43 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[16-Jul-2016 00:07:43 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[16-Jul-2016 00:07:43 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[16-Jul-2016 00:07:46 UTC] PHP Fatal error:  Cannot redeclare get_trimmed_phone() (previously declared in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php:132) in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php on line 273
+[16-Jul-2016 00:07:46 UTC] PHP Stack trace:
+[16-Jul-2016 00:07:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/index.php:0
+[16-Jul-2016 00:07:46 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/index.php:10
+[16-Jul-2016 00:07:46 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[16-Jul-2016 00:07:46 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[16-Jul-2016 00:07:46 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[16-Jul-2016 00:08:05 UTC] PHP Fatal error:  Cannot redeclare get_trimmed_phone() (previously declared in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php:132) in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php on line 273
+[16-Jul-2016 00:08:05 UTC] PHP Stack trace:
+[16-Jul-2016 00:08:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[16-Jul-2016 00:08:05 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/admin-ajax.php:22
+[16-Jul-2016 00:08:05 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-load.php:37
+[16-Jul-2016 00:08:05 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-config.php:92
+[16-Jul-2016 00:08:07 UTC] PHP Fatal error:  Cannot redeclare get_trimmed_phone() (previously declared in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php:132) in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php on line 273
+[16-Jul-2016 00:08:07 UTC] PHP Stack trace:
+[16-Jul-2016 00:08:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/index.php:0
+[16-Jul-2016 00:08:07 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/index.php:10
+[16-Jul-2016 00:08:07 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[16-Jul-2016 00:08:07 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[16-Jul-2016 00:08:07 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[16-Jul-2016 00:08:18 UTC] PHP Fatal error:  Cannot redeclare get_trimmed_phone() (previously declared in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php:132) in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php on line 273
+[16-Jul-2016 00:08:18 UTC] PHP Stack trace:
+[16-Jul-2016 00:08:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/index.php:0
+[16-Jul-2016 00:08:18 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/index.php:10
+[16-Jul-2016 00:08:18 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[16-Jul-2016 00:08:18 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[16-Jul-2016 00:08:18 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[16-Jul-2016 00:08:19 UTC] PHP Fatal error:  Cannot redeclare get_trimmed_phone() (previously declared in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php:132) in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php on line 273
+[16-Jul-2016 00:08:19 UTC] PHP Stack trace:
+[16-Jul-2016 00:08:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/index.php:0
+[16-Jul-2016 00:08:19 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/index.php:10
+[16-Jul-2016 00:08:19 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[16-Jul-2016 00:08:19 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[16-Jul-2016 00:08:19 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[16-Jul-2016 00:08:21 UTC] PHP Fatal error:  Cannot redeclare get_trimmed_phone() (previously declared in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php:132) in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php on line 273
+[16-Jul-2016 00:08:21 UTC] PHP Stack trace:
+[16-Jul-2016 00:08:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/index.php:0
+[16-Jul-2016 00:08:21 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/index.php:10
+[16-Jul-2016 00:08:21 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[16-Jul-2016 00:08:21 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[16-Jul-2016 00:08:21 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92
+[16-Jul-2016 00:08:22 UTC] PHP Fatal error:  Cannot redeclare get_trimmed_phone() (previously declared in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php:132) in /home/ubuntu/workspace/wp-content/themes/nyc-prosthodontics/functions.php on line 273
+[16-Jul-2016 00:08:22 UTC] PHP Stack trace:
+[16-Jul-2016 00:08:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/index.php:0
+[16-Jul-2016 00:08:22 UTC] PHP   2. require_once() /home/ubuntu/workspace/wp-admin/index.php:10
+[16-Jul-2016 00:08:22 UTC] PHP   3. require_once() /home/ubuntu/workspace/wp-admin/admin.php:31
+[16-Jul-2016 00:08:22 UTC] PHP   4. require_once() /home/ubuntu/workspace/wp-load.php:37
+[16-Jul-2016 00:08:22 UTC] PHP   5. require_once() /home/ubuntu/workspace/wp-config.php:92

@@ -1,0 +1,210 @@
+$offcanvas-width:       250px;
+
+@media only screen and (min-width: 768px) {
+    // for all other "bigger" sizes when the offcanvas is hidden
+    // this is corrected with JS as well, but there's a "flash" that this takes care of
+    #inner-nav {
+        height: auto!important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* Reset responsive Bootstrap elements */
+    #navbar-offcanvas {
+
+        /* Specific to the Off Canvas nav */
+        #navbar-oc {
+
+            .dropdown-menu {
+                display: block;
+                position: static;
+                border: 0;
+                margin: 0;
+                padding: 0;
+                @include box-shadow(none);
+                background: transparent;
+                float: none;
+
+                li {
+
+                    a {
+                        padding: 10px 20px;
+                        color: $gray;
+
+                        &:hover,
+                        &:focus {
+                            color: $red;
+                            background: transparent;
+                        }
+
+                    }
+
+                    &.active {
+
+                        a {
+                            color: $white;
+
+                            &:hover {
+                                color: $red;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .nav > li > a {
+                color: $gray;
+                padding: 10px;
+                border-top: 1px solid $gray;
+                
+                &:hover, &:focus {
+                    color: $red;
+                    background: transparent;
+                }
+                
+            }
+            
+            .nav > li:first-child > a {
+                border: none;
+            }
+
+        }
+
+        .navbar-header {
+            float: none;
+        }
+
+        .navbar-toggle {
+            display: block;
+        }
+
+        .navbar-nav {
+            float: none !important;
+            margin: 0 0 15px;
+
+            .open .dropdown-menu>li>a {
+                line-height: 1.42857;
+            }
+
+        }
+
+        // important if you want to open and close dropdowns
+        // .navbar-nav .open .dropdown-menu {
+        //     position: static;
+        //     float: none;
+        //     background-color: transparent;
+        //     border: 0;
+        //     box-shadow: none;
+        // }
+
+        .navbar-form {
+            float: none !important;
+            padding: 0;
+        }
+
+        .navbar-nav>li {
+            float: none;
+        }
+
+        .navbar-collapse {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+            width: $offcanvas-width;
+            min-height: 100%;
+            margin: 0;
+		    text-transform: uppercase;
+            border: none;
+            background-color: $cream;
+            z-index: 10;
+            -ms-transform: translateX($offcanvas-width);
+            -webkit-transform: translateX($offcanvas-width);
+            transform: translateX($offcanvas-width);
+
+            // .no-csstransforms3d & {
+            //  @include translate($offcanvas-width, 0);
+            // }
+
+            &.collapse {
+                display: none !important;
+                visibility: hidden !important;
+            }
+
+            &.collapsing,
+            &.in {
+                display: block !important;
+                visibility: visible !important;
+            }
+
+            &:after {
+                position: absolute;
+                content: '';
+                display: block;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 10px;
+                @include box-shadow(inset 6px 0px 12px -6px rgba(126,129,132,0.5));
+            }
+
+        }
+
+    }
+
+    body.menu-slider.in #container {
+        -ms-transform: translateX(-$offcanvas-width);
+        -webkit-transform: translateX(-$offcanvas-width);
+        transform: translateX(-$offcanvas-width);
+
+        #inner-container {
+            opacity: 0.25;
+
+            // &:before {
+            //  position: absolute;
+            //  content: '';
+            //  display: block;
+            //  top: 0;
+            //  right: 0;
+            //  bottom: 0;
+            //  left: 0;
+            //  background: $black;
+            //  opacity: 0.75;
+            //  z-index: 5;
+            // }
+
+        }
+
+    }
+
+    /* Reposition elements affected by the sliding menu */
+    #container {
+        position: relative;
+        height: auto;
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+        transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+
+        #inner-container {
+            position: relative;
+            overflow: hidden;
+            opacity: 1;
+            @include transition(opacity 0.3s ease-in-out);
+
+            // &:before {
+            //  opacity: 0;
+            //  @include transition(opacity 0.3s ease-in-out);
+            // }
+
+        }
+
+    }
+
+}

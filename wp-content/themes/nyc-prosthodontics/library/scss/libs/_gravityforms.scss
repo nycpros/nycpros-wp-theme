@@ -1,0 +1,130 @@
+.gform_wrapper ul {
+  padding-left: 0;
+  list-style: none;
+}
+.gform_wrapper li {
+  @extend .form-group;
+}
+.gform_wrapper form {
+  margin-bottom: 0;
+}
+.gform_wrapper .gfield_required {
+  padding-left: 1px;
+  color: $state-danger-text;
+}
+.ginput_container input,
+.ginput_container select,
+.ginput_container textarea {
+  font-size: 16px;
+  @extend .form-control;
+}
+.ginput_container textarea {
+  height: auto;
+
+  &.small {
+      height: 6em;
+  }
+
+}
+.gform_button {
+    @extend .btn;
+    @extend .btn-primary;
+}
+.gform_wrapper .gfield_error {
+  .gfield_label {
+    color: $state-danger-text;
+  }
+  input,
+  select,
+  textarea {
+    border-color: $alert-danger-border;
+    background-color: $alert-danger-bg;
+    color: $alert-danger-text;
+    @include form-control-focus($alert-danger-text);
+  }
+}
+.ginput_complex {
+  label {
+    font-size: $font-size-base;
+    color: $gray;
+  }
+}
+.validation_message {
+  font-size: $font-size-base;
+}
+.gfield_radio {
+  @extend .radio;
+}
+.gfield_checkbox {
+  @extend .checkbox;
+}
+.gfield_radio,
+.gfield_checkbox {
+  li {
+    margin-bottom: 0;
+  }
+}
+.gfield_radio input[type="radio"],
+.gfield_checkbox input[type="checkbox"] {
+  margin-left: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  background: transparent;
+  border: none;
+  @include border-radius(0);
+  @include box-shadow(none);
+  @include transition(none);
+}
+.validation_error {
+  @extend .alert;
+  @extend .alert-danger;
+}
+#gforms_confirmation_message {
+  @extend .alert;
+  @extend .alert-success;
+}
+.ginput_full,
+.ginput_complex {
+  @extend .cf;
+}
+.gfield_description {
+  &.validation_message {
+    display: none !important;
+  }
+}
+.gfield_label {
+  display: block;
+  clear: both;
+}
+.ginput_left,
+.ginput_right {
+  @extend .t-1of2;
+  @extend .d-1of2;
+}
+.ginput_right {
+  @extend .last-col;
+  @extend .m-all;
+  @extend .t-all;
+}
+.gform_ajax_spinner {
+  display: inline-block;
+  content: '';
+  font: normal normal normal 28px/1 FontAwesome !important;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin: 0 0 0 10px !important;
+  transform: translate(0, 0);
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+  width: 28px !important;
+  height: 28px !important;
+  vertical-align: -15%;
+
+  &:before {
+      content: '\f110';
+  }
+
+}

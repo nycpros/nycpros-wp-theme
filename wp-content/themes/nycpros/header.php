@@ -108,8 +108,7 @@
             
 </form>-->
 
-            <form action="http://www.nycpros.com/search" id="cse-search-box" class="clearfix">
-            
+            <form action="/search" id="cse-search-box" class="clearfix">
                 <input type="text" class="q field trans" name="q" id="q" value="<?php echo $_GET["q"]; ?>" />
                 <input type="image" src="<?php bloginfo('template_directory'); ?>/images/search_button.gif" name="submit" class="submit">              
             </form>

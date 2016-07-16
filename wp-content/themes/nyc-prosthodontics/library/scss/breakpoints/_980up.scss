@@ -1,0 +1,27 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet (Landscape) & Small Desktop Stylesheet
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+.show-above-980     { display: block !important; }
+.show-below-980     { display: none !important; }
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+    width: 940px;
+}
+
+#main.t-all {
+    width: 640px;
+    padding-right: 20px;
+}
