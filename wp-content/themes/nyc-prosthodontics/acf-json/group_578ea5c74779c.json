@@ -7,7 +7,7 @@
             "label": "Subgallery Images",
             "name": "subgallery_images",
             "type": "gallery",
-            "instructions": "",
+            "instructions": "Upload images that are a minimum of 293px(w) x 195px(h).  Better would be to provide 2x versions at 586(w) x 390(h).",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -46,5 +46,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1468966382
+    "modified": 1469045066
 }

@@ -45,11 +45,11 @@
             "label": "Image (Column 1)",
             "name": "col1_image",
             "type": "image",
-            "instructions": "",
+            "instructions": "Image size should be a minimum of 469px(w) x 313px(h).  Ideally, create these optimized images at 2x - 938px(w) x 626px(h) - for \"Retina\" & Hi-DPI screens.  ",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": 50,
                 "class": "",
                 "id": ""
             },
@@ -73,7 +73,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": 50,
                 "class": "",
                 "id": ""
             },
@@ -141,11 +141,11 @@
             "label": "Image (Column 2)",
             "name": "col2_image",
             "type": "image",
-            "instructions": "",
+            "instructions": "Image size should be a minimum of 469px(w) x 313px(h).  Ideally, create these optimized images at 2x - 938px(w) x 626px(h) - for \"Retina\" & Hi-DPI screens.  ",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": 50,
                 "class": "",
                 "id": ""
             },
@@ -169,7 +169,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": 50,
                 "class": "",
                 "id": ""
             },
@@ -205,12 +205,12 @@
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1469031782
+    "modified": 1469044674
 }
