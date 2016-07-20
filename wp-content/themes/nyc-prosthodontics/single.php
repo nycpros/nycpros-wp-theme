@@ -18,7 +18,15 @@
 								</header> <?php // end article header ?>
 
 								<section class="news-content entry-content cf" itemprop="articleBody">
-								  <?php the_content(); ?>
+									
+									<?php if ( has_post_thumbnail() ) { ?>
+									
+									<?php echo get_the_post_thumbnail($page->ID, 'large'); ?>
+									
+									<?php } // end post thumb check ?>										
+									
+									<?php the_content(); ?>
+									
 								</section> <?php // end article section ?>
 
 							</article> <?php // end article ?>

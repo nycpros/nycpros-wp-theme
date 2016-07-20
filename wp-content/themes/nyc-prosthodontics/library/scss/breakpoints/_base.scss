@@ -171,7 +171,8 @@ h1, .h1 {
 		margin-bottom: 0.125em;
 	}
 	
-	.headline-main & {
+	.headline-main &,
+	.twocol-main & {
 		border: 0 none;
 		clip: rect(0px, 0px, 0px, 0px);
 		height: 1px;
@@ -599,6 +600,10 @@ POSTS & CONTENT STYLES
 				margin: 0 auto 1em;
 				max-width: 100%;
 				height: auto;
+			}
+			
+			.twocol-img {
+				border-bottom: 1px solid $gray;
 			}
 
 			/*

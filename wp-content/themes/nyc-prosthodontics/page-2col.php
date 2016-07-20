@@ -21,19 +21,21 @@ Template Name: Page (2 Column)
 
 									<?php ########### TWO COLUMNS ############### ?>
 						
-									    	<div class="twocol-block wrap cf">
+									    	<div class="twocol-block cf">
 									    		
-										    	<div class="m-all t-1of2 d-1of2 first-col cf" >
+										    	<div class="m-all col-1of2 cf" >
 			
-													<?php if(get_field('col1_title')) { ?>
-													<h2><?php the_field('col1_title'); ?></h2>
-											        <?php } ?>
-											        
 											        <?php if(get_field('col1_image')) { 
 											        	$image = get_field('col1_image');
 											        ?>
-											        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+											        <div class="twocol-img">
+											       		<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+											        </div>
 											        <?php } ?>												        
+
+													<?php if(get_field('col1_title')) { ?>
+													<h2><?php the_field('col1_title'); ?></h2>
+											        <?php } ?>
 											        
 											        <?php if(get_field('col1_wysiwyg')) { ?>
 											        <?php the_field('col1_wysiwyg'); ?>
@@ -41,22 +43,24 @@ Template Name: Page (2 Column)
 											        
 												</div>
 												
-										    	<div class="m-all t-1of2 d-1of2 last-col cf" >
+										    	<div class="m-all col-1of2 cf" >
 	
+											        <?php if(get_field('col2_image')) { 
+											        	$image = get_field('col2_image');
+											        ?>
+											        <div class="twocol-img">
+												        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+											        </div>
+											        <?php } ?>												        
+
 													<?php if(get_field('col2_title')) { ?>
 													<h2><?php the_field('col2_title'); ?></h2>
 											        <?php } ?>
 											        
-											        <?php if(get_field('col2_image')) { 
-											        	$image = get_field('col2_image');
-											        ?>
-											        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-											        <?php } ?>												        
-											        
 											        <?php if(get_field('col2_wysiwyg')) { ?>
 											        <?php the_field('col2_wysiwyg'); ?>
 											        <?php } ?>
-											        
+
 										        </div>	
 
 											</div>

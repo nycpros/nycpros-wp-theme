@@ -59,6 +59,15 @@ over your project's layout.
 .col-1of2 {
   @include grid-col;
   width: 50%;
+  
+  .twocol-block & {
+    padding: 0 0.5em;
+  }
+  
+}
+
+.twocol-block {
+  margin: 0 -0.5em;
 }
 
 .col-1of3 {

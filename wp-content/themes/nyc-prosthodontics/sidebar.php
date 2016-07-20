@@ -9,12 +9,16 @@
 					<?php ########### POSTS LOOP ############# ?>
 					
 					<?php
+					// First let's get the current post ID to exclude it!
+					$post = $wp_query->post;
+					$not_in[0] = $post->ID;
 					$args=array(
 						'post_type' => 'post',
 						'post_status' => 'publish',
 						'posts_per_page' => 6,
 						'cat' => -7,
-						'caller_get_posts'=> 1
+						'caller_get_posts'=> 1,
+						'post__not_in' => $not_in
 					);
 					$my_query = null;
 					$my_query = new WP_Query($args);
@@ -27,7 +31,7 @@
 					
 						<?php if ( has_post_thumbnail() ) { ?>
 						
-						<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php echo get_the_post_thumbnail($page->ID, 'thumbnail'); ?></a>
+						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php echo get_the_post_thumbnail($page->ID, 'thumbnail'); ?></a>
 						
 						<?php } // end post thumb check ?>
 						
