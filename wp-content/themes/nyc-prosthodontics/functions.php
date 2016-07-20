@@ -150,6 +150,9 @@ if(function_exists('acf_add_options_page')) {
   acf_add_options_page('Options');
 }
 
+/************* ADMIN COLUMNS ********************/
+add_filter( 'cac/suppress_site_wide_notices', '__return_true' );
+
 /************* YOAST TWEAKS *****************/
 
 // Filter out Yoast SEO columns

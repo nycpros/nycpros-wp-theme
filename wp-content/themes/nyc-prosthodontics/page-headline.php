@@ -10,7 +10,7 @@ Template Name: Page (Headline)
 
 				<div id="inner-content" class="wrap cf">
 
-						<div id="main" class="heading-blocks" role="main">
+						<div id="main" class="headline-main" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

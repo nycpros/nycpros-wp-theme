@@ -171,7 +171,7 @@ h1, .h1 {
 		margin-bottom: 0.125em;
 	}
 	
-	.heading-blocks & {
+	.headline-main & {
 		border: 0 none;
 		clip: rect(0px, 0px, 0px, 0px);
 		height: 1px;
@@ -189,7 +189,7 @@ h2, .h2 {
 	line-height: 1.2em;
 	margin-bottom: 0.375em;
 	
-	.heading-blocks & {
+	.headline-main & {
 		font-size: 1.05em;
     	margin-top: 0;
 	}
@@ -311,9 +311,28 @@ HOME STYLES
 HEADING BLOCK STYLES
 *********************/
 
-.heading-blocks {
+.headline-main {
+	
+	.heading-block {
+		
+		margin: 1em 0 0 0;
+		padding: 1em 0 0 0;
+		border-top: 1px solid #BBBBBA;
+		
+		&:first-child {
+			margin-top: 0;
+			padding-top: 0;
+			border-top: 0;
+			
+		}
+		
+	}
 	
 	p { font-size: 0.875em; }
+	
+	img {
+		margin-bottom: 0!important;
+	}
 }
 
 
@@ -572,7 +591,7 @@ POSTS & CONTENT STYLES
 
 			img {
 				display: block;
-				margin: 0 auto 1.5em;
+				margin: 0 auto 1em;
 				max-width: 100%;
 				height: auto;
 			}
