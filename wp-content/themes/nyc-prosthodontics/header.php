@@ -43,27 +43,21 @@
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-		<?php /*
 		<?php if (is_page_template('search-results.php')) { // if we're on the search results page, load the CSE script  ?>
 
 		<script>
-
-		// Custom CSE
-		(function() {
-		    var cx = 'customvaluegoeshere';
+		  (function() {
+		    var cx = '010977307137991815227:fkx2gtegvke';
 		    var gcse = document.createElement('script');
 		    gcse.type = 'text/javascript';
 		    gcse.async = true;
-		    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-		        '//www.google.com/cse/cse.js?cx=' + cx;
+		    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
 		    var s = document.getElementsByTagName('script')[0];
 		    s.parentNode.insertBefore(gcse, s);
-		})();
-
+		  })();
 		</script>
 
 		<?php  } // end search results page check ?>
-		*/ ?>
 
 		<?php wp_head(); ?>
 

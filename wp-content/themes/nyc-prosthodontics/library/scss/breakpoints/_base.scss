@@ -199,6 +199,10 @@ h2, .h2 {
 		margin-top: 0;
 	}
 	
+	.twocol-main & {
+		font-size: 1.05em;
+	}
+	
 }
 
 h3, .h3 {
@@ -312,6 +316,27 @@ HOME STYLES
 	p { font-size: 0.875em; }
 }
 
+
+/*********************
+TWCOL STYLES
+*********************/
+
+.twocol-main {
+	
+	.twocol-block {
+		
+		p { 
+			font-size: 0.875em; 
+			
+		}
+		
+	}
+	
+	.gform_body {
+		font-size: 0.875em;
+	}
+	
+}
 
 /*********************
 HEADING BLOCK STYLES
