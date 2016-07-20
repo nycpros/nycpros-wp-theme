@@ -23,7 +23,7 @@
 					
 						while ($my_query->have_posts()) : $my_query->the_post(); ?>
 					
-					<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+					<div id="post-<?php the_ID(); ?>" class="post-listing">
 					
 						<?php if ( has_post_thumbnail() ) { ?>
 						
@@ -31,11 +31,11 @@
 						
 						<?php } // end post thumb check ?>
 						
-						<h3><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-						<div class="date"><?php the_time('F jS, Y') ?></div>
+						<h3 class="news-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+						<div class="news-date"><?php the_time('F jS, Y') ?></div>
 						
-						<div class="entry">
-							<?php the_excerpt('MORE'); ?>
+						<div class="news-content">
+							<?php the_excerpt(); ?>
 						</div>
 					
 					</div>
@@ -44,7 +44,7 @@
 					
 					} // end if have posts ?>
 					
-					<a id="archive" href="/archive">View News Archive &raquo;</a>
+					<a id="archive" class="btn btn-primary" href="/archive">View News Archive &raquo;</a>
 					
 					<?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>					
 

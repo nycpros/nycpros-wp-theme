@@ -93,11 +93,11 @@ function br_register_required_plugins() {
         ),  
 
         // ACF Nav Menu Field From the WordPress repository
-        array(
-            'name'      => 'Advanced Custom Fields: Nav Menu Field',
-            'slug'      => 'advanced-custom-fields-nav-menu-field',
-            'required'  => true,
-        ),  
+        // array(
+        //     'name'      => 'Advanced Custom Fields: Nav Menu Field',
+        //     'slug'      => 'advanced-custom-fields-nav-menu-field',
+        //     'required'  => true,
+        // ),  
 
         // WPTHumb on-demand image generation
         // array(

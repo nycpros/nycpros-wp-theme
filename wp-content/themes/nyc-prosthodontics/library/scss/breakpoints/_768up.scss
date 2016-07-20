@@ -236,32 +236,6 @@ SIDEBARS & ASIDES
 	margin-top: 1em;
 }
 
-	.widgettitle {
-		border-bottom: 2px solid #444;
-		margin-bottom: 0.75em;
-	}
-
-	.widget {
-		padding: 0 10px;
-		margin: 0 0 1.5em;
-
-		ul {
-			li {
-				margin-bottom: 0.75em;
-
-				&:first-child {}
-				&:last-child {}
-				a {}
-				/* deep nesting */
-
-				ul {
-					margin-top: 0.75em;
-					padding-left: 1em;
-				}
-			}
-		}
-	}
-
 
 	/* links widget */
 	.widget_links {}
