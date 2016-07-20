@@ -8,7 +8,7 @@
 					
 					<div class="source-org">
 
-						<span><strong><?php the_field('footer_title', 'options'); ?></strong></span> <span><?php the_field('footer_address', 'options'); ?></span> <span>Phone: <a href="tel:<?php echo get_trimmed_phone(get_field('footer_phone', 'options')); ?>"><?php the_field('footer_phone', 'options'); ?></a></span> <span>Fax: <a href="fax:<?php echo get_trimmed_phone(get_field('footer_fax', 'options')); ?>"><?php the_field('footer_fax', 'options'); ?></a></span> <span><a href="/contact">Contact Us</a></span>
+						<div class="location"><span><strong><?php the_field('footer_title', 'options'); ?></strong></span> <span><?php the_field('footer_address', 'options'); ?></span></div> <span>Phone: <a href="tel:<?php echo get_trimmed_phone(get_field('footer_phone', 'options')); ?>"><?php the_field('footer_phone', 'options'); ?></a></span> <span>Fax: <a href="fax:<?php echo get_trimmed_phone(get_field('footer_fax', 'options')); ?>"><?php the_field('footer_fax', 'options'); ?></a></span> <span><a href="/contact">Contact Us</a></span>
 						
 					</div>
 					

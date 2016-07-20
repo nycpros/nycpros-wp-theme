@@ -25,3 +25,88 @@ LAYOUT & GRID STYLES
     width: 640px;
     padding-right: 20px;
 }
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+
+	.search-toggle {
+		display: none;
+	}	
+	
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.navbar-collapse {
+
+	.navbar-nav {
+		
+		> li {		
+
+			#cse-search-box {
+
+				&.collapse {
+					display: inline-block;
+					visibility: visible;
+					height: auto;
+					padding-bottom: 0;
+					overflow: visible;
+					
+					&.in {
+						position: relative;
+						top: auto;
+						right: auto;
+						width: auto;
+						display: inline-block;
+					}					
+					
+				}
+				
+			    input {
+				    padding: 2px 24px 2px 4px;
+			    }				
+				
+			    .btn-search {
+			        left: auto;
+			    	right: 6px;
+
+					.fa {
+					    width: 23px;
+					}				    
+				    
+			    }				
+			    
+			}
+			
+		}
+		
+	}	
+	
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.footer {
+
+	#inner-footer {
+
+		.source-org {
+		    text-align: left;
+			
+			.location {
+			    display: inline-block;
+				margin-bottom: 0;
+			}
+
+		}
+		
+	}
+
+}

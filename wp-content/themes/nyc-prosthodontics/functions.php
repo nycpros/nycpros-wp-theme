@@ -24,10 +24,15 @@ function nav_search_form() {
   $wrap  = '<ul id="%1$s" class="%2$s">';
   $wrap .= '%3$s';
   $wrap .= '<li class="search">';
-  $wrap .= '<form action="/search" id="cse-search-box" class="cf">';
+  $wrap .= '<form action="/search" id="cse-search-box" class="collapse cf">';
   $wrap .= '<input type="text" class="q" name="q" id="q" value="' . $_GET["q"] . '" />';
   $wrap .= '<button class="btn-search" type="submit"><i class="fa fa-search fa-fw"></i></button>';
   $wrap .= '</form>';
+  $wrap .= '<button type="button" class="search-toggle collapsed" data-toggle="collapse" data-target="#cse-search-box">';
+  $wrap .= '<span class="sr-only">Toggle search</span>';
+  $wrap .= '<i class="fa fa-search fa-fw"></i>';
+  $wrap .= '<i class="fa fa-close fa-fw"></i>';
+  $wrap .= '</button>';
   $wrap .= '</li>';
   $wrap .= '</ul>';
   return $wrap;
@@ -287,7 +292,7 @@ add_shortcode( 'my_instagram', 'my_instagram_shortcode' );
 
 /************* WYSIWYG SHORTCODE SELECTOR INJECTOR *****************/
 
-add_action('media_buttons','add_sc_select',99);
+//add_action('media_buttons','add_sc_select',99);
 
 function add_sc_select(){
     global $shortcode_tags;

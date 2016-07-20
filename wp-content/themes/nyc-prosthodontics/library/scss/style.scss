@@ -59,14 +59,14 @@ Note: the bootstap file controls which bootstrap elements are used.
 // @import "libs/bootstrap-select/bootstrap-select";
 
 // magnific popup
-// @import "libs/magnific-popup/magnific-main";
+//@import "libs/magnific-popup/magnific-main";
 
 // flexslider
 // @import "libs/flexslider";
 
 // slick
-// @import "libs/slick/slick";
-// @import "libs/slick/our-slick";
+@import "libs/slick/slick";
+@import "libs/slick/our-slick";
 
 /*********************
 IMPORTING MODULES

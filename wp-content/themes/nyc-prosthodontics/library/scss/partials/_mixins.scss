@@ -40,6 +40,19 @@ USAGE: @include transition(all 0.2s ease-in-out);
   }
 }
 
+/*
+USAGE: @include transform(rotate(45deg));
+*/
+
+@mixin transform($transform...) {
+  // defining prefixes so we can use them in mixins below
+  $prefixes:      ("-webkit", "-moz", "-o");
+  @each $prefix in $prefixes {
+    #{$prefix}-transform: $transform;
+  }
+  transform: $transform;
+}
+
 /*********************
 CSS3 GRADIENTS
 Be careful with these since they can

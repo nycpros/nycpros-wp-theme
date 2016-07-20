@@ -44,6 +44,45 @@ HEADER STYLES
 		}
 		
 	}
+	
+	.search-toggle {
+		display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+		color: $gray;
+		font-size: 14px;
+		line-height: 16px;
+        float: right;
+        margin: 0;
+        padding: 8px 9px;
+        background-color: $cream;
+        border: 1px solid transparent;
+        @include border-radius(0);
+        outline: none;
+        -webkit-tap-highlight-color: rgba(255,255,255,0);
+        
+        .fa-search {
+        	display: none;
+        }
+        
+        .fa-close {
+        	display: inline-block;
+        }
+        
+        &.collapsed {
+        	
+        	.fa-search {
+        		display: inline-block;
+        	}
+        	
+        	.fa-close {
+        		display: none;
+        	}
+        	
+        }
+        
+	}	
 
 }
 
@@ -68,11 +107,18 @@ NAVIGATION STYLES
 			text-align: center;
 			text-transform: uppercase;
 			vertical-align: middle;
+			
+			&.active {
+				a {
+					color: $red;
+					background: $cream;
+				}
+			}
 
 			a {
 				position: relative;
 				color: $gray;
-				padding: 7px 15px;
+				padding: 7px 16px;
 				margin: 0;
 
 				&:hover, &:focus {
@@ -109,17 +155,50 @@ NAVIGATION STYLES
 			    margin: 0;
 			    padding: 0 6px 0 0;
 			    
+				&.collapse {
+					display: none;
+					visibility: hidden;
+					height: 0;
+					padding-bottom: 0;
+					overflow: hidden;
+					
+					&.in {
+						position: absolute;
+						top: 7px;
+						right: 30px;
+						width: 698px;
+						display: block;
+						visibility: visible;
+						height: auto;
+						padding-bottom: 0;
+						overflow: visible;
+		                @include transition(width 0.35s ease);
+					}
+					
+				}
+				
+	            &.collapsing {
+	            	position: absolute;
+	            	top: 7px;
+	            	right: 10px;
+	                width: 0;
+	                height: 20px !important;
+	                overflow: hidden;
+	                @include transition(width 0.35s ease);
+	            }				
 			    
 			    input {
-				    padding: 2px 24px 2px 4px;
+			    	font-size: 13px;
+				    padding: 2px 10px 2px 30px;
 			    }
 			    
 			    .btn-search {
-			    	right: 6px;
+			    	left: 0;
+			    	right: auto;
 
 					.fa {
-					    line-height: 23px;
-					    width: 23px;
+					    line-height: 20px;
+					    width: 30px;
 					}				    
 				    
 			    }			    
@@ -154,7 +233,7 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-	margin-top: 8px;
+	margin-top: 1em;
 }
 
 	.widgettitle {
@@ -164,7 +243,7 @@ SIDEBARS & ASIDES
 
 	.widget {
 		padding: 0 10px;
-		margin: 2.2em 0;
+		margin: 0 0 1.5em;
 
 		ul {
 			li {
@@ -281,6 +360,11 @@ FOOTER STYLES
 	#inner-footer {
 
 		.source-org {
+			text-align: center;
+			
+			.location {
+				margin-bottom: 0.5em;
+			}
 
 			span {
 				display: inline-block;

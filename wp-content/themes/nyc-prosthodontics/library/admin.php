@@ -145,7 +145,7 @@ add_filter( 'login_headertitle', 'bones_login_title' );
 add_action('admin_head', 'bones_admin_css');
 
 // get the logo from site options
-add_action('login_head', 'my_custom_login_logo');
+// add_action('login_head', 'my_custom_login_logo');
 
 /************* CUSTOMIZE ADMIN *******************/
 

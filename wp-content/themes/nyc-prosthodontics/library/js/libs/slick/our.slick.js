@@ -78,4 +78,18 @@ jQuery(document).ready(function($) {
 			dots: true,
 		});
 
+
+	/* ======= SLICK GALLERY  ======= */
+	
+	$('.subgallery-block').slick({
+		
+		  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 2
+		
+	  });
+		
+
+
+
 }); /* end of as page load scripts */

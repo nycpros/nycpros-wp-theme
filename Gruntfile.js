@@ -59,8 +59,8 @@ module.exports = function(grunt) {
           '<%= globalConfig.path %>/library/js/libs/bootstrap/dropdown.js',
           '<%= globalConfig.path %>/library/js/libs/bootstrap/transition.js',
           //'<%= globalConfig.path %>/library/js/libs/bootstrap-select/bootstrap-select.min.js',
-          //'<%= globalConfig.path %>/library/js/libs/magnific-popup/magnific-popup.js',
-          '<%= globalConfig.path %>/library/js/libs/share/jquery.sharrre.js',
+          '<%= globalConfig.path %>/library/js/libs/magnific-popup/magnific-popup.js',
+          //'<%= globalConfig.path %>/library/js/libs/share/jquery.sharrre.js',
           '<%= globalConfig.path %>/library/js/libs/slick/slick.js',
           '<%= globalConfig.path %>/library/js/libs/tappy/tappy.js',
 
