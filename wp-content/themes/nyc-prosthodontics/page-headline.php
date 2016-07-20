@@ -29,7 +29,7 @@ Template Name: Page (Headline)
 									 <?php	// loop through the rows of data
 									    while ( have_rows('heading_repeater') ) : the_row(); ?>
 									    
-									    	<div class="heading-block wrap cf">
+									    	<div class="heading-block cf">
 									    		
 										    	<div class="m-all t-3of5 d-3of7 last-col cf" >
 			
@@ -100,8 +100,8 @@ Template Name: Page (Headline)
 										   <div class="subgallery-block m-all t-2of5 d-4of7 first-col cf">
 										        <?php foreach( $images as $image ): ?>
 										            <div>
-										                <a href="<?php echo $image['url']; ?>">
-										                	<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" data-caption="<?php echo $image['caption']; ?>" />
+										                <a href="<?php echo $image['url']; ?>" data-caption="<?php echo $image['caption']; ?>">
+										                	<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>"  />
 										                </a>
 										            </div>
 										        <?php endforeach; ?>

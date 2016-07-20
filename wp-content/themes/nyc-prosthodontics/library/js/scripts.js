@@ -141,20 +141,42 @@ jQuery(document).ready(function($) {
 
 	/* ======= MAGNIFIC POPUP ======= */
 	// // Instigate Popups (GENERAL)
-	// $('.open-popup-link').magnificPopup({
-	//   type:'inline',
-	//   midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-	//   callbacks: {
-	// 	  open: function() {
-	// 	    $('body').addClass('popup-open');
-	// 	    //console.log('Popup Open');
-	// 	  },
-	// 	  close: function() {
-	// 	  	$('body').removeClass('popup-open');
-	// 	    //console.log('Popup Closed');
-	// 	  }
-	//   }
-	// });
+	jQuery('.open-popup-link').magnificPopup({
+	  type:'image',
+	  closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		},
+	  callbacks: {
+		  open: function() {
+		    jQuery('body').addClass('popup-open');
+		    console.log('Popup Open');
+		  },
+		  close: function() {
+		  	jQuery('body').removeClass('popup-open');
+		    console.log('Popup Closed');
+		  }
+	  }
+	});
+	
+	
+$('.subgallery-block').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: '.slick-slide:not(.slick-cloned) a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        },
+        image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			titleSrc: function(item) {
+				return item.el.data('caption');
+			}
+		}
+    });
+});
+	
 
 	/* ======= DETERMINE PAGE IN JS ======= */
 	// setting some page vars for jQuery	

@@ -81,15 +81,14 @@ jQuery(document).ready(function($) {
 
 	/* ======= SLICK GALLERY  ======= */
 	
-	$('.subgallery-block').slick({
-		
+	$('.subgallery-block')
+		.on('init', function(event, slick){
+			$('body').removeClass('page-loading');
+		})
+		.slick({
 		  infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 2
-		
-	  });
-		
-
-
+		  slidesToShow: 2,
+		  slidesToScroll: 2
+		});
 
 }); /* end of as page load scripts */
