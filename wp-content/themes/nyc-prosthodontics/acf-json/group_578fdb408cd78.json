@@ -28,7 +28,7 @@
             "label": "Featured Image",
             "name": "featured_image",
             "type": "image",
-            "instructions": "",
+            "instructions": "Ideal 2x (square) image size here would be: 600(w) x 600(h).",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -65,5 +65,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1469046029
+    "modified": 1469135170
 }
