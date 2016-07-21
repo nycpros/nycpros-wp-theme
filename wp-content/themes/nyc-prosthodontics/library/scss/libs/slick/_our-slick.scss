@@ -194,64 +194,14 @@ SLICK SLIDER STYLES
 	
 }
 
-// @media (max-width: 480px) {
-	
-// 	.subgallery-block,
-// 	.gallery-block {	
-		
-// 		.slick-prev,
-// 		.slick-next {
-// 			height: 40px;
-// 			// margin-top: -20px;
-			
-// 			&:before {
-// 				position: absolute;
-// 				top: 10px;
-// 				right: 5px;
-// 				font-size: 20px;
-// 			}
-	
-// 			&:after {
-// 				right: -14px;
-// 				content: '\f111';
-// 				@include fa(40px);
-// 			}			
-			
-// 		}
-		
-// 		.slick-prev {
-// 			left: 0px;
-	
-// 			&:before {
-// 				left: 5px;
-// 				right: auto;
-// 			}
-	
-// 			&:after {
-// 				left: -14px;
-// 				right: auto;
-// 			}
-	
-// 		}
-	
-// 		.slick-next {
-// 			right: 0px;
-// 		}		
-		
-// 	}
-	
-// }
-
-// @media (min-width: 768px) and (max-width: 1023px) {
-@media (max-width: 1023px) {
+@media (max-width: 480px) {
 	
 	.subgallery-block {	
 		
 		.slick-prev,
 		.slick-next {
 			height: 40px;
-			// margin-top: -20px;
-			
+
 			&:before {
 				top: 10px;
 				font-size: 20px;
@@ -280,7 +230,70 @@ SLICK SLIDER STYLES
 	
 	}
 	
-	.gallery-block {
+}
+
+@media (max-width: 767px) {
+	
+	.touch .gallery-block {
+		
+		.slick-dots {
+			display: none !important;
+		}
+		
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	
+	.subgallery-block {	
+		
+		.slick-prev,
+		.slick-next {
+			height: 40px;
+
+			&:before {
+				top: 10px;
+				font-size: 20px;
+			}
+	
+			&:after {
+				right: -14px;
+				@include fa(40px);
+			}			
+			
+		}
+		
+		.slick-prev {
+
+			&:before {
+				left: 5px;
+				right: auto;
+			}
+	
+			&:after {
+				left: -14px;
+				right: auto;
+			}
+	
+		}
+	
+	}
+	
+}
+
+@media (min-width: 768px) {
+
+	.subgallery-block {
+		padding-right: 0;
+		margin-left: -0.5em;
+	}
+
+}
+
+@media (max-width: 1023px) {
+
+	.touch .gallery-block {
 		
 		.slick-prev,
 		.slick-next {
@@ -290,57 +303,3 @@ SLICK SLIDER STYLES
 	}
 	
 }
-
-@media (min-width: 768px) {
-
-	.subgallery-block {
-		padding-right: 0em;
-		margin-left: -0.5em;
-	}
-
-}
-
-/*
-
-@media (min-width: 980px) and (max-width: 767px)  {
-	
-}
-
-
-@media (max-width: 979px) {
-
-	.subgallery-block {	
-		.slick-prev,
-		.slick-next {
-			top: 3px;
-		}
-		
-	}
-	
-}
-
-@media (min-width: 980px) and (max-width: 1023px)  {
-	
-	.subgallery-block {	
-		.slick-prev,
-		.slick-next {
-			top: 16px;
-		}
-		
-	}	
-	
-}
-
-@media (min-width: 1024px) {
-
-	.subgallery-block {	
-		.slick-prev,
-		.slick-next {
-			top: 50px;
-		}
-		
-	}
-	
-}
-
-*/

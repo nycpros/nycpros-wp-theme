@@ -46,7 +46,7 @@ USAGE: @include transform(rotate(45deg));
 
 @mixin transform($transform...) {
   // defining prefixes so we can use them in mixins below
-  $prefixes:      ("-webkit", "-moz", "-o");
+  $prefixes:      ("-webkit", "-moz", "-ms", "-o");
   @each $prefix in $prefixes {
     #{$prefix}-transform: $transform;
   }
