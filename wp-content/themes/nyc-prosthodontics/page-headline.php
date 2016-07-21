@@ -116,7 +116,11 @@ Template Name: Page (Headline)
 									
 									<?php } // end if subgalleries check ?>
 
+									<?php if (get_the_content()) { ?>
+									<div class="headline-content-wrap">
 									<?php the_content(); ?>
+									</div>
+									<?php } ?>
 
 								</section>
 
