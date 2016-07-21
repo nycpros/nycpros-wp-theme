@@ -8,10 +8,10 @@ Template Name: Gallery Page
 
 <div id="gallery_main">
 
- <?php ########### GALLERYITEM LOOP ############# ?>
+<?php ########### GALLERYITEM LOOP ############# ?>
     
-    <?php
-	$args=array(
+<?php
+$args=array(
   'post_type' => 'galleryitem',
   'post_status' => 'publish',
   'posts_per_page' => -1,

@@ -55,7 +55,7 @@ Template Name: Page (Headline)
 
 											</div>
 											
-											    <?php endwhile; ?>
+									    <?php endwhile; ?>
 	
 									
 									<?php endif;  ?>
@@ -66,60 +66,56 @@ Template Name: Page (Headline)
 									
 									$subgalleries_array = get_field('subgalleries'); 
 									
-									 ?>
+									?>
 									
 									<section id="subgallery-wrap" class="entry-content cf" itemprop="articleBody">
 
-									<?php									
-									// loop arguments
-									$arr = array( 
-										'post_type' => 'subgallery', 
-										'post__in' => $subgalleries_array,
-										'posts_per_page' => -1 
-										); 
-
-									$loop = new WP_Query( $arr ); 
-									?>
-
-									<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-									
-									<div class="cf">
-									
-										<div class="m-all t-3of5 d-3of7 last-col cf">
-										<h2><?php the_title(); ?></h2>
-										<?php the_content(); ?>
-										</div>									
-									
-
-										<?php 
-									
-										$images = get_field('subgallery_images');
-
-										if( $images ): ?>
-
-										   <div class="subgallery-block m-all t-2of5 d-4of7 first-col cf">
-										        <?php foreach( $images as $image ): ?>
-										            <div>
-										                <a href="<?php echo $image['url']; ?>" data-caption="<?php echo $image['caption']; ?>">
-										                	<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>"  />
-										                </a>
-										            </div>
-										        <?php endforeach; ?>
-										    </div>
-										<?php endif; ?>
+										<?php									
+										// loop arguments
+										$arr = array( 
+											'post_type' => 'subgallery', 
+											'post__in' => $subgalleries_array,
+											'posts_per_page' => -1 
+											); 
+	
+										$loop = new WP_Query( $arr ); 
+										?>
+	
+										<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										
-									</div>
-
-									<?php endwhile; wp_reset_query(); ?>
-
-								</section>
-								
-								<?php } // end if subgalleries check ?>
-
-
-
-
+										<div class="cf">
+										
+											<div class="m-all t-3of5 d-3of7 last-col cf">
+											<h2><?php the_title(); ?></h2>
+											<?php the_content(); ?>
+											</div>									
+										
+	
+											<?php 
+										
+											$images = get_field('subgallery_images');
+	
+											if( $images ): ?>
+	
+											   <div class="subgallery-block m-all t-2of5 d-4of7 first-col cf" style="visibility: hidden;">
+											        <?php foreach( $images as $image ): ?>
+											            <div>
+											                <a href="<?php echo $image['url']; ?>" data-caption="<?php echo $image['caption']; ?>">
+											                	<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>"  />
+											                </a>
+											            </div>
+											        <?php endforeach; ?>
+											    </div>
+											<?php endif; ?>
+											
+										</div>
+	
+										<?php endwhile; wp_reset_query(); ?>
+	
+									</section>
 									
+									<?php } // end if subgalleries check ?>
+
 									<?php the_content(); ?>
 
 								</section>

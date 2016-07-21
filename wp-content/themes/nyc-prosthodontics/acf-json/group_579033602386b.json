@@ -1,10 +1,10 @@
 {
-    "key": "group_578ff24055b4c",
-    "title": "Search Template",
+    "key": "group_579033602386b",
+    "title": "Bios Page Template",
     "fields": [
         {
-            "key": "field_578ff23121ea6",
-            "label": "Search Message",
+            "key": "field_5790337649f8f",
+            "label": "Bios Page Message",
             "name": "",
             "type": "message",
             "instructions": "",
@@ -15,7 +15,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Nothing to see here....this page has no configurable options.  It is here only to facilitate the display of search query results.",
+            "message": "This page template displays all entered BIOS.  There are no configurable options.",
             "new_lines": "wpautop",
             "esc_html": 0
         }
@@ -25,7 +25,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "search-results.php"
+                "value": "page-bios.php"
             }
         ]
     ],
@@ -51,5 +51,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1469068264
+    "modified": 1469068242
 }

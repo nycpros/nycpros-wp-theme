@@ -63,7 +63,7 @@
 
 	</head>
 
-	<body <?php body_class( 'page-loading' ); ?>>
+	<body <?php body_class(); ?>>
 
 		<div id="container">
 

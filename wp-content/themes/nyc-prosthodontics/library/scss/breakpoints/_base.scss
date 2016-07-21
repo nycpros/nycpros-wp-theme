@@ -173,7 +173,8 @@ h1, .h1 {
 	
 	.headline-main &,
 	.twocol-main &,
-	.bios-main & {
+	.bios-main &,
+	.gallery-main & {
 		border: 0 none;
 		clip: rect(0px, 0px, 0px, 0px);
 		height: 1px;
@@ -195,16 +196,13 @@ h2, .h2 {
 		margin-top: 0;
 	}	
 	
-	.headline-main & {
+	.headline-main &,
+	.bios-main &,
+	.gallery-main & {
 		font-size: 1.05em;
     	margin-top: 0;
 	}
 
-	.bios-main & {
-		font-size: 1.05em;
-    	margin: 0;
-	}
-	
 	.twocol-main & {
 		font-size: 1.05em;
 	}
@@ -262,6 +260,10 @@ HEADER STYLES
 	}
 	
 	.navbar-toggle {
+		position: absolute;
+		top: 0;
+		right: 0;
+		float: none;
 		margin-right: 0;
 	
 		// Bars
@@ -339,6 +341,10 @@ BIOS STYLES
 			padding: 0;
 		}
 		
+		img {
+			margin-bottom: 1em;
+		}
+		
 		p { 
 			font-size: 0.875em; 
 			
@@ -353,10 +359,11 @@ BIOS STYLES
 
 
 /*********************
-TWoCOL STYLES
+TWOCOL STYLES
 *********************/
 
 .twocol-main {
+	overflow: hidden;
 	
 	.twocol-block {
 		
@@ -487,6 +494,10 @@ POSTS & CONTENT STYLES
 	
 	.home & {
 		margin: 0;
+	}
+	
+	&.gallery-main {
+		overflow: hidden;
 	}
 	
 }
@@ -1091,10 +1102,10 @@ FOOTER STYLES
 	#inner-footer {
 		border-top: 1px solid $gray;
 		padding-top: 0.5em;
-		margin-bottom: 2em;
 		
 		.source-org {
 			font-size: 0.75em;
+			margin-bottom: 2em;
 			
 			strong {
 				@include serif(600);

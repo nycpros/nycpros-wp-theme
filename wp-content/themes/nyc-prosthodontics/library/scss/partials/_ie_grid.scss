@@ -17,8 +17,14 @@ whatever you use in here.
 @mixin grid-col {
     position: relative;
     float: left;
-    padding-right: 0.75em;
+    padding-right: 1em;
 
+}
+
+// the first column
+.first-col {
+  float: left !important;
+  padding-left: 0 !important;
 }
 
 // the last column
@@ -31,6 +37,15 @@ whatever you use in here.
 .col-1of2 {
 	@include grid-col;
 	width: 50%;
+	
+    .twocol-block & {
+        padding: 0 1em;
+    }	
+	
+}
+
+.twocol-block {
+  margin: 0 -1em !important;
 }
 
 .col-1of3 {
@@ -151,7 +166,7 @@ whatever you use in here.
     width: 57.1428572%;
 }
 
-    .d-5of7 {
+.d-5of7 {
     @include grid-col;
     width: 71.4285715%;
 }

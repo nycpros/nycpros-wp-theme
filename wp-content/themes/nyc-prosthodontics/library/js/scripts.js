@@ -140,7 +140,7 @@ jQuery(document).ready(function($) {
 	// });
 
 	/* ======= MAGNIFIC POPUP ======= */
-	// // Instigate Popups (GENERAL)
+	// Instigate Popups (GENERAL)
 	jQuery('.open-popup-link').magnificPopup({
 	  type:'image',
 	  closeOnContentClick: true,
@@ -160,22 +160,22 @@ jQuery(document).ready(function($) {
 	  }
 	});
 	
-	
-$('.subgallery-block').each(function() { // the containers for all your galleries
-    $(this).magnificPopup({
-        delegate: '.slick-slide:not(.slick-cloned) a', // the selector for gallery item
-        type: 'image',
-        gallery: {
-          enabled:true
-        },
-        image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.data('caption');
+	// Instigate Subgallery Popups
+	$('.subgallery-block').each(function() { // the containers for all your galleries
+	    $(this).magnificPopup({
+	        delegate: '.slick-slide:not(.slick-cloned) a', // the selector for gallery item
+	        type: 'image',
+	        gallery: {
+	          enabled:true
+	        },
+	        image: {
+				tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+				titleSrc: function(item) {
+					return item.el.data('caption');
+				}
 			}
-		}
-    });
-});
+	    });
+	});
 	
 
 	/* ======= DETERMINE PAGE IN JS ======= */

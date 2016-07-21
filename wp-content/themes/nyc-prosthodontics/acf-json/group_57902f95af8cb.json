@@ -1,0 +1,51 @@
+{
+    "key": "group_57902f95af8cb",
+    "title": "Gallery Page Template",
+    "fields": [
+        {
+            "key": "field_57902fa706098",
+            "label": "Selected Galleries",
+            "name": "selected_galleries",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "galleryitem"
+            ],
+            "taxonomy": [
+
+            ],
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "id"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-gallery.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1469068001
+}
