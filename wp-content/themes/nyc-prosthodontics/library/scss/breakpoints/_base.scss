@@ -172,7 +172,8 @@ h1, .h1 {
 	}
 	
 	.headline-main &,
-	.twocol-main & {
+	.twocol-main &,
+	.bios-main & {
 		border: 0 none;
 		clip: rect(0px, 0px, 0px, 0px);
 		height: 1px;
@@ -190,13 +191,18 @@ h2, .h2 {
 	line-height: 1.2em;
 	margin-bottom: 0.375em;
 	
+	&.archive-title {
+		margin-top: 0;
+	}	
+	
 	.headline-main & {
 		font-size: 1.05em;
     	margin-top: 0;
 	}
-	
-	&.archive-title {
-		margin-top: 0;
+
+	.bios-main & {
+		font-size: 1.05em;
+    	margin: 0;
 	}
 	
 	.twocol-main & {
@@ -317,8 +323,37 @@ HOME STYLES
 }
 
 
+
 /*********************
-TWCOL STYLES
+BIOS STYLES
+*********************/
+
+.bios-main {
+	
+	.bios-block {
+		padding: 1em 0 0 0;
+		border-top: 1px solid $gray;
+		
+		&:first-child {
+			border: none;
+			padding: 0;
+		}
+		
+		p { 
+			font-size: 0.875em; 
+			
+			&.bio-subtitle {
+				margin: 0;
+			}
+		}
+		
+	}	
+	
+} 
+
+
+/*********************
+TWoCOL STYLES
 *********************/
 
 .twocol-main {
@@ -327,7 +362,6 @@ TWCOL STYLES
 		
 		p { 
 			font-size: 0.875em; 
-			
 		}
 		
 	}
@@ -348,7 +382,7 @@ HEADING BLOCK STYLES
 		
 		margin: 1em 0 0 0;
 		padding: 1em 0 0 0;
-		border-top: 1px solid #BBBBBA;
+		border-top: 1px solid $gray;
 		
 		&:first-child {
 			margin-top: 0;
@@ -852,6 +886,124 @@ PAGE NAVI STYLES
 }
 
 /*********************
+GOOGLE SEARCH STYLES
+*********************/
+
+.gsc-control-cse {
+	padding: 0 !important;
+
+	.gsc-above-wrapper-area {
+		border-bottom: 1px solid $gray;
+		padding-bottom: 0;
+
+		.gsc-above-wrapper-area-container {
+			border-bottom: 1px solid $gray;
+		}
+
+	}
+
+	.gsc-result-info,
+	.gcsc-branding,
+	.gsc-table-result,
+	.gsc-thumbnail-inside,
+	.gsc-url-top {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.gsc-results {
+		width: 100%;
+	}
+	
+	.gsc-selected-option-container {
+		min-width: 80px;
+	}
+
+	a, a:visited {
+		color: $link-color !important;
+		text-decoration: none !important;
+
+		/* on hover */
+		&:hover, &:focus {
+			color: $link-hover !important;
+		}
+
+	}
+
+	.gs-title {
+		text-decoration: none !important;
+	}
+	
+	.gs-result .gs-title, .gs-result .gs-title * {
+		color: $link-color;
+		text-decoration: none;
+	}
+
+	.gs-visibleUrl {
+		color: $gray !important;
+	}
+
+	.gsc-cursor-box {
+		text-align: center;
+
+		.gsc-cursor {
+			display: inline-block;
+			font-size: 16px;
+			margin: 1px;
+			@include border-radius(4px);
+
+			div {
+				position: relative;
+				float: left;
+				padding: 6px 12px;
+				margin: 0;
+				line-height: 1.428571429;
+				text-decoration: none;
+				background-color: #ffffff;
+				border: 1px solid #ddd;
+				margin-left: -1px;
+				color: $black;
+
+				&:hover,
+				&:focus {
+					background-color: #eee;
+					text-decoration: none;
+				}
+				
+				&:focus {
+					outline: none;
+				}
+
+				&.gsc-cursor-current-page {
+					z-index: 2;
+					color: #ffffff;
+					font-weight: normal;
+					background-color: $link-hover;
+					border-color: $link-hover;
+					cursor: default;
+				}
+
+				&:first-child {
+					@include border-radius(4px 0 0 4px);
+				}
+
+				&:last-child {
+					@include border-radius(0 4px 4px 0);
+				}
+				
+				&:only-child {
+					@include border-radius(4px);
+				}				
+
+			}
+
+		}
+
+	} /* end .gsc-cursor-box */
+
+} /* end .gsc-control-cs */
+
+/*********************
 SIDEBARS & ASIDES
 *********************/
 
@@ -859,10 +1011,12 @@ SIDEBARS & ASIDES
 	
 	#archive {
 		margin: 0 10px 1.5em;
-		width: 100%;
+		
+		a {
+			width: 100%;
+		}
+
 	}	
-	
-}
 
 	.widgettitle {
 		border-bottom: 1px solid $gray;
@@ -872,8 +1026,8 @@ SIDEBARS & ASIDES
 
 	.widget,
 	.post-listing {
-		padding: 0 10px;
-		margin: 0 0 1.5em;
+		padding: 0;
+		margin: 0 10px 1.5em;
 		
 		img {
 			display: block;
@@ -926,6 +1080,7 @@ SIDEBARS & ASIDES
 		margin-bottom: 1.5em;
 	}
 	
+}	
 	
 /*********************
 FOOTER STYLES

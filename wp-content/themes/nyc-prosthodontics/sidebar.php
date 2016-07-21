@@ -48,7 +48,9 @@
 					
 					} // end if have posts ?>
 					
-					<a id="archive" class="btn btn-primary" href="/archive">View News Archive &raquo;</a>
+					<div id="archive">
+						<a class="btn btn-primary" href="/archive">View News Archive &raquo;</a>
+					</div>
 					
 					<?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>					
 
