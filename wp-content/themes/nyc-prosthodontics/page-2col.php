@@ -29,7 +29,9 @@ Template Name: Page (2 Column)
 											        	$image = get_field('col1_image');
 											        ?>
 											        <div class="twocol-img">
-											       		<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+											        	<?php if (get_field('col1_image_url')) { ?><a href="<?php the_field('col1_image_url'); ?>" target="_blank"><?php } ?>
+											       			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+											       		<?php if (get_field('col1_image_url')) { ?></a><?php } ?>
 											        </div>
 											        <?php } ?>												        
 
@@ -49,7 +51,9 @@ Template Name: Page (2 Column)
 											        	$image = get_field('col2_image');
 											        ?>
 											        <div class="twocol-img">
-												        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+											        	<?php if (get_field('col2_image_url')) { ?><a href="<?php the_field('col2_image_url'); ?>" target="_blank"><?php } ?>
+												        	<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+												        <?php if (get_field('col2_image_url')) { ?></a><?php } ?>
 											        </div>
 											        <?php } ?>												        
 
